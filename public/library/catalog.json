@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "byline": "Monet Marcel by Delray",
+  "lastUpdated": "2026-10-30",
+  "editorialNote": "Only approved public publications are listed. Two untitled draft PDFs were omitted.",
+  "items": [
+    {
+      "id": "vox-001",
+      "title": "GRENBK:DTW (Collector Edition)",
+      "category": "Magazine",
+      "format": "PDF",
+      "url": "https://pdflink.to/julyedt/"
+    },
+    {
+      "id": "vox-002",
+      "title": "GRENBK: DTW LFN",
+      "category": "Magazine",
+      "format": "PDF",
+      "url": "https://pdflink.to/julyvol1i2/"
+    },
+    {
+      "id": "vox-003",
+      "title": "35 YO",
+      "category": "Poetry",
+      "format": "PDF",
+      "url": "https://pdflink.to/thirtyfive/"
+    },
+    {
+      "id": "vox-004",
+      "title": "GRENBK:DTW",
+      "category": "Magazine",
+      "format": "PDF",
+      "url": "https://pdflink.to/grenbka1/"
+    },
+    {
+      "id": "vox-005",
+      "title": "East St. Louis Is Burning",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://pdflink.to/stlouis/"
+    },
+    {
+      "id": "vox-006",
+      "title": "Say Hi I Love You",
+      "category": "Writing",
+      "format": "Word",
+      "url": "https://pdflink.to/sayhi/"
+    },
+    {
+      "id": "vox-007",
+      "title": "DON'T POINT NORTH & GET CLEAN",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://pdflink.to/7dpngc/"
+    },
+    {
+      "id": "vox-008",
+      "title": "Palmer Park: GRLS",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://pdflink.to/ppgrls/",
+      "description": "A title from the Palmer Park literary cycle."
+    },
+    {
+      "id": "vox-009",
+      "title": "Loon: A Play",
+      "category": "Theatre",
+      "format": "PDF",
+      "url": "https://pdflink.to/loon/"
+    },
+    {
+      "id": "vox-010",
+      "title": "Palmer Park: BOIS",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://pdflink.to/ppbois/",
+      "description": "A title from the Palmer Park literary cycle."
+    },
+    {
+      "id": "vox-011",
+      "title": "The Winter That Asked for Soup",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/winter/",
+      "description": "A winter tale from the Delray speculative-fiction universe."
+    },
+    {
+      "id": "vox-012",
+      "title": "The Inheritance of Fear — Proposal Pack",
+      "category": "Research & Studio",
+      "format": "PDF",
+      "url": "https://linkjar.to/feakpk/"
+    },
+    {
+      "id": "vox-013",
+      "title": "The Inheritance of Fear",
+      "category": "Research & Studio",
+      "format": "PowerPoint",
+      "url": "https://linkjar.to/fear/"
+    },
+    {
+      "id": "vox-014",
+      "title": "Internment of Solace",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/ios/",
+      "description": "A boy discovers a buried mechanical witness beneath Delray and tries to revive its heart."
+    },
+    {
+      "id": "vox-015",
+      "title": "Commissary of Whimsy",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/whimsy/",
+      "description": "A girl descends into Delray's underground economy of strange markets and stranger citizens."
+    },
+    {
+      "id": "vox-016",
+      "title": "The Maladaptive Parade of Trauma",
+      "category": "Essays & Criticism",
+      "format": "PDF",
+      "url": "https://linkjar.to/parade/",
+      "description": "Literary criticism on trauma, interpretation, and the institutions that shape experience."
+    },
+    {
+      "id": "vox-017",
+      "title": "Lock & Bolt",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/lbolt/"
+    },
+    {
+      "id": "vox-018",
+      "title": "MDNT MRKT × WHALEFALL",
+      "category": "Theatre",
+      "format": "PDF",
+      "url": "https://linkjar.to/breadwo/"
+    },
+    {
+      "id": "vox-019",
+      "title": "Awaken Me",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://linkjar.to/awke/"
+    },
+    {
+      "id": "vox-020",
+      "title": "Diggers — 2011 Edition",
+      "category": "Theatre",
+      "format": "PDF",
+      "url": "https://linkjar.to/epub2011/"
+    },
+    {
+      "id": "vox-021",
+      "title": "re(Fill)",
+      "category": "Essays & Criticism",
+      "format": "PDF",
+      "url": "https://linkjar.to/refill/"
+    },
+    {
+      "id": "vox-022",
+      "title": "Stencil and Colors",
+      "category": "Research & Studio",
+      "format": "PDF",
+      "url": "https://linkjar.to/stencilc/"
+    },
+    {
+      "id": "vox-023",
+      "title": "DETEST",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/detest1/"
+    },
+    {
+      "id": "vox-024",
+      "title": "DSMSSED CLWNS",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://pdflink.to/ogclwns/"
+    },
+    {
+      "id": "vox-025",
+      "title": "The Stage Plays: Monet Marcel by Delray",
+      "category": "Theatre",
+      "format": "Flipbook",
+      "url": "https://pdflink.to/tspmmbd/"
+    },
+    {
+      "id": "vox-026",
+      "title": "Diggers — 2011 Edition (archive copy)",
+      "category": "Theatre",
+      "format": "PDF",
+      "url": "https://pdflink.to/ogdig/"
+    },
+    {
+      "id": "vox-027",
+      "title": "Dssmsd Clwns",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://pdflink.to/clwns1/"
+    },
+    {
+      "id": "vox-028",
+      "title": "Clwns Bund",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://pdflink.to/clwns2/"
+    },
+    {
+      "id": "vox-029",
+      "title": "Just Give Me Water",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://pdflink.to/water/"
+    },
+    {
+      "id": "vox-030",
+      "title": "EKA 2",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://pdflink.to/ekatwo/"
+    },
+    {
+      "id": "vox-031",
+      "title": "ROSES",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://pdflink.to/roses/"
+    },
+    {
+      "id": "vox-032",
+      "title": "35 Years Old",
+      "category": "Poetry",
+      "format": "PDF",
+      "url": "https://pdflink.to/735yo/"
+    },
+    {
+      "id": "vox-033",
+      "title": "DeadAlphabet",
+      "category": "Writing",
+      "format": "PDF",
+      "url": "https://linkjar.to/dead_alphabet/"
+    },
+    {
+      "id": "vox-034",
+      "title": "GRENBK:DTW Manual (Scout Edition)",
+      "category": "Magazine",
+      "format": "Flipbook",
+      "url": "https://linkjar.to/grenbkdtwman/"
+    },
+    {
+      "id": "vox-035",
+      "title": "Humidor Lecture 1",
+      "category": "Lecture",
+      "format": "Flipbook",
+      "url": "https://linkjar.to/humidorops/",
+      "description": "First lecture, presented as a flipbook."
+    }
+  ]
+}
