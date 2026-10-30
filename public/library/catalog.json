@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "byline": "Monet Marcel by Delray",
   "lastUpdated": "2026-10-30",
-  "editorialNote": "Only approved public publications are listed. Two untitled draft PDFs were omitted.",
+  "editorialNote": "All submitted publication links are included; two links explicitly labeled [Draft] are identified as drafts, not finished works.",
   "items": [
     {
       "id": "vox-001",
@@ -255,6 +255,150 @@
       "format": "Flipbook",
       "url": "https://linkjar.to/humidorops/",
       "description": "First lecture, presented as a flipbook."
+    },
+    {
+      "title": "SHIVA — Theatrical Edition",
+      "category": "Theatre",
+      "format": "Publication",
+      "url": "https://linkjar.to/7dyswte_td/",
+      "description": "A theatrical edition from the MDNT MRKT archive.",
+      "id": "vox-036"
+    },
+    {
+      "title": "SHIVA / 7DYSWTSE",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/7dyswtse/",
+      "description": "The companion publication in the SHIVA sequence.",
+      "id": "vox-037"
+    },
+    {
+      "title": "Calder City, Michigan",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/caldercity/",
+      "description": "A literary dispatch from the Michigan imagination.",
+      "id": "vox-038"
+    },
+    {
+      "title": "The Humidor — Lecture 2",
+      "category": "Essays & Criticism",
+      "format": "Publication",
+      "url": "https://linkjar.to/lecture2/",
+      "description": "A continuation of the Humidor lecture series.",
+      "id": "vox-039"
+    },
+    {
+      "title": "Once: On Poetic Form",
+      "category": "Essays & Criticism",
+      "format": "Publication",
+      "url": "https://linkjar.to/oncefull/",
+      "description": "An inquiry into poetic form.",
+      "id": "vox-040"
+    },
+    {
+      "title": "almasexual",
+      "category": "Poetry",
+      "format": "Publication",
+      "url": "https://linkjar.to/almasexual/",
+      "description": "Poems from Delray, 2010–2026. A collected edition by Monet Marcel by Delray, published by MDNT MRKT PRESS · PERENNIAL.",
+      "id": "vox-041"
+    },
+    {
+      "title": "DSMSSED CLWNS",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/dcab1/",
+      "description": "An entry in the CLWNS experimental cycle.",
+      "id": "vox-042"
+    },
+    {
+      "title": "Cornbread",
+      "category": "Writing",
+      "format": "Publication",
+      "url": "https://linkjar.to/cornbread/",
+      "description": "A work from the MDNT MRKT literary catalog.",
+      "id": "vox-043"
+    },
+    {
+      "title": "SMKSTACK WHITEPAGES",
+      "category": "Essays & Criticism",
+      "format": "Publication",
+      "url": "https://linkjar.to/whitepages/",
+      "description": "White papers and working material from SMKSTACK.",
+      "id": "vox-044"
+    },
+    {
+      "title": "NOTES on Decline — Play",
+      "category": "Theatre",
+      "format": "Publication",
+      "url": "https://linkjar.to/nodply/",
+      "description": "A dramatic work concerned with decline.",
+      "id": "vox-045"
+    },
+    {
+      "title": "CLWNTWN",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/clwntwn/",
+      "description": "An installment of the CLWNTWN universe.",
+      "id": "vox-046"
+    },
+    {
+      "title": "CLOWN BOUND",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/clwnsbund/",
+      "description": "A related title in the CLWNS cycle.",
+      "id": "vox-047"
+    },
+    {
+      "title": "VoyeurS — A Novella",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/voyeurs/",
+      "description": "A novella from the MDNT MRKT literary archive.",
+      "id": "vox-048"
+    },
+    {
+      "title": "MarrowOps",
+      "category": "Fiction",
+      "format": "Publication",
+      "url": "https://linkjar.to/marrowopsp3/",
+      "description": "A speculative work in the wider narrative catalog.",
+      "id": "vox-049"
+    },
+    {
+      "title": "Journal",
+      "category": "Research & Studio",
+      "format": "PDF",
+      "url": "https://linkjar.to/journal/",
+      "description": "A journal from the MDNT MRKT archive.",
+      "id": "vox-050"
+    },
+    {
+      "title": "In the midst of DangR",
+      "category": "Fiction",
+      "format": "PDF",
+      "url": "https://linkjar.to/litmod/",
+      "description": "A publication in the DangR body of work.",
+      "id": "vox-051"
+    },
+    {
+      "title": "[Draft] My PDF (Linkjar)",
+      "category": "Draft",
+      "format": "PDF",
+      "url": "https://linkjar.to/c130bd54/",
+      "description": "DRAFT: publisher-supplied link. Not labeled as a finished edition.",
+      "id": "vox-052"
+    },
+    {
+      "title": "[Draft] My PDF (PDFLink)",
+      "category": "Draft",
+      "format": "PDF",
+      "url": "https://pdflink.to/0f328c91/",
+      "description": "DRAFT: publisher-supplied link. Not labeled as a finished edition.",
+      "id": "vox-053"
     }
   ]
 }
