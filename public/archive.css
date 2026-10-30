@@ -1,0 +1,40 @@
+/* MDNT MRKT CONT. / VOX / PRESS: shared archive pages */
+.archive-page{background:#0a0a0a;color:#f5f5f0}
+.archive-page .site-shell{overflow:visible}
+.archive-wrap{max-width:1440px;margin:auto;padding:0 5% 100px}
+.archive-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:45px;padding:80px 0 70px;align-items:center;border-bottom:1px solid #43433c}
+.archive-kicker,.archive-overline,.archive-counter,.archive-meta,.archive-label,.archive-note{font:10px/1.6 var(--font-mono);letter-spacing:.12em}
+.archive-kicker{color:var(--signal);margin:0 0 22px}
+.archive-hero h1{font:700 clamp(42px,6vw,84px)/1.12 var(--font-serif);letter-spacing:-.065em;margin:0 0 25px}
+.archive-hero h1 em{font-weight:400;color:var(--signal);font-style:italic}
+.archive-lead{font:clamp(15px,1.55vw,19px)/1.8 var(--font-serif);color:#d3d2ca;max-width:720px;margin:0 0 20px}
+.archive-note{color:#aaa99e;max-width:630px}
+.archive-art{display:block;max-width:100%;height:auto;opacity:.91;mix-blend-mode:screen}
+.archive-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 0}
+.archive-overline{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;margin:30px 0;color:var(--river)}
+.archive-controls{display:flex;gap:15px;align-items:end;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid #42423a}
+.archive-control{display:flex;flex-direction:column;gap:9px;flex:1 1 190px}
+.archive-control:first-child{flex:2 1 250px}
+.archive-control label{font:10px var(--font-mono);letter-spacing:.1em;color:#b3b2aa}
+.archive-control input,.archive-control select{width:100%;min-height:48px;padding:12px 14px;background:#181815;border:1px solid #606057;color:var(--paper);border-radius:0;font:13px var(--font-ui)}
+.archive-control input:focus,.archive-control select:focus{border-color:var(--signal)}
+.archive-counter{color:var(--signal);margin:21px 0 0}
+.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:28px 0 50px}
+.archive-card{display:flex;flex-direction:column;min-width:0;background:#11110f;border:1px solid #3e3e37;transition:border-color .2s,transform .2s}
+.archive-card:hover{border-color:var(--signal);transform:translateY(-2px)}
+.archive-card-top{min-height:115px;padding:20px;border-bottom:1px solid #383831;background:radial-gradient(circle at 85% 15%,#3c4130,transparent 35%),#181815;display:flex;align-items:end;justify-content:space-between}
+.archive-card-mark{font:800 clamp(28px,3vw,42px)/1 var(--font-ui);letter-spacing:-.07em;color:var(--signal);white-space:nowrap}
+.archive-card-index{font:10px var(--font-mono);color:var(--river)}
+.archive-card-content{padding:22px 23px 24px;display:flex;flex:1;flex-direction:column;align-items:start}
+.archive-meta{color:var(--river);margin:0 0 10px}
+.archive-card h2{font:700 clamp(19px,2vw,25px)/1.4 var(--font-serif);letter-spacing:-.035em;margin:0 0 14px;overflow-wrap:anywhere}
+.archive-description{color:#b6b5ad;font:13px/1.75 var(--font-ui);margin:0 0 22px}
+.archive-card a{color:var(--signal);margin-top:auto;padding-top:8px;font:10px/1.6 var(--font-mono);letter-spacing:.08em;text-decoration:none}
+.archive-card a:hover{text-decoration:underline}
+.archive-status{color:#c7c5b9;padding:32px 0;font:14px/1.8 var(--font-serif)}
+.archive-status a{color:var(--signal)}
+.archive-cta{border-top:1px solid #42423a;margin-top:50px;padding-top:34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.archive-cta p{color:#c8c7bf;font:15px/1.7 var(--font-serif);margin:0;max-width:690px}
+.archive-page .top-nav a[aria-current=page]{color:var(--signal);border-bottom:1px solid var(--signal);padding-bottom:5px}
+@media(max-width:1000px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-hero{gap:20px}}
+@media(max-width:700px){.archive-wrap{padding-bottom:55px}.archive-hero{grid-template-columns:1fr;padding:55px 0 45px}.archive-art{max-height:230px;width:auto;margin:auto}.archive-grid{grid-template-columns:1fr}.archive-card-top{min-height:92px}.archive-card-mark{font-size:34px}.archive-hero h1{font-size:clamp(39px,10vw,60px)}.archive-actions .button{width:100%}.archive-overline{font-size:9px}.archive-cta .button{width:100%}.archive-page .top-nav{gap:10px}.archive-page .top-nav a{font-size:9px}.archive-page .site-header{gap:12px}}
