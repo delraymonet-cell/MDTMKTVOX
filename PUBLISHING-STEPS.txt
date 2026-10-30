@@ -1,0 +1,43 @@
+MDNT MRKT VOX — PUT THE PODCAST PAGE LIVE
+========================================
+
+LIVE PUBLIC RSS SOURCE (already supplied by Substack):
+https://api.substack.com/feed/podcast/7894037.rss
+
+THIS PACKAGE CREATES A WEBSITE THAT DISPLAYS AND PLAYS EPISODES FROM THAT FEED.
+It does NOT replace the RSS address or move podcast hosting away from Substack.
+
+RECOMMENDED METHOD: NETLIFY + GITHUB
+
+1. Unzip MDNT_MRKT_VOX_RSS_Website.zip.
+2. Create a GitHub account or sign into GitHub: https://github.com
+3. Create a new repository called mdnt-mrkt-vox (any name works).
+4. Upload all files FROM INSIDE the unzipped project folder to that repository.
+   Keep these three at the repository top level:
+       netlify.toml
+       public/  (contains index.html, styles.css, app.js, and assets/)
+       netlify/functions/  (contains podcast.mjs)
+5. Sign into Netlify: https://app.netlify.com
+6. Select Add new project > Import an existing project > GitHub.
+7. Select the GitHub repo you just created and deploy.
+   Settings from netlify.toml should be detected automatically.
+   If not, set Publish directory to public, Functions directory to
+   netlify/functions, and leave Build command blank.
+8. Open the live Netlify link supplied after deployment.
+9. TEST: Open https://YOUR-SITE.netlify.app/api/feed
+   - You should see XML from your podcast RSS.
+   - If a 502 message appears, verify the feed is public and at least one
+     episode is published, and re-check the source URL in podcast.mjs.
+10. Return to your site homepage and test PLAY on an episode.
+11. Put the new public website URL in your YouTube description and
+    your Substack navigation. Optionally connect a custom domain.
+
+IMPORTANT: Drag-and-drop deployment of the public/ folder shows only
+STATIC DESIGN; it does not publish the RSS serverless function.
+For LIVE RSS updates use Git-connected Netlify as above.
+
+TO UPDATE EPISODES
+Publish new episodes on Substack. The website refreshes from the public
+RSS automatically; no manual update to site source is needed.
+
+FOR FURTHER INSTRUCTIONS, SEE README.md.

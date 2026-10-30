@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <meta name="description" content="MDNT MRKT VOX: midnight transmissions on literature, art, systems, Detroit Gothic, and the quiet machinery of culture. Listen to the latest episodes." />
+  <meta property="og:title" content="MDNT MRKT VOX | The Signal Is Alive" />
+  <meta property="og:description" content="Midnight transmissions on literature, art, and systems. Field notes, essays, audio fiction, and signals from Detroit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/share-card.jpg" />
+  <meta name="color-scheme" content="dark" />
+  <title>MDNT MRKT VOX | The Signal Is Alive</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#episodes">Skip to episodes</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="mini-brand" href="#top" aria-label="MDNT MRKT VOX home">MDNT MRKT <span>CONT.</span></a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#episodes">EPISODES</a>
+        <a href="#about">ABOUT</a>
+        <a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer">SUBSTACK <span aria-hidden="true">↗</span></a>
+      </nav>
+      <span class="meta-time">DETROIT // 00:00 <i class="plus-mark" aria-hidden="true">+</i></span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="micro-kicker"><span class="live-dot" aria-hidden="true"></span> INDEPENDENT AUDIO / TRANSMISSION ACTIVE</p>
+          <h1 id="hero-title"><span>MDNT MRKT</span><strong>VOX<span class="hero-accent">.</span></strong></h1>
+          <p class="podcast-label">P O D C A S T <span class="ornament">/</span> DETROIT</p>
+          <p class="hero-description">Midnight transmissions on <em>literature, art, and systems.</em> Field notes, essays, and signals from the quiet machinery of culture.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#episodes">LISTEN TO THE TRANSMISSIONS <span aria-hidden="true">↗</span></a>
+            <a class="button button-line" href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer">READ THE ARCHIVE <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-endline">STAY OPEN. STAY ACTIVE. <strong>THE SIGNAL IS ALIVE.</strong></p>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <img src="/assets/skeletal-bird-moon.webp" alt="" width="661" height="390" />
+          <span class="vertical-signal">FIELD RECORDING // VOX 001</span>
+        </div>
+      </section>
+
+      <div class="frequency-rule" aria-hidden="true"><span>◦ ◦ ◦</span><div class="frequency-bars"></div><span>SGNL / ACTIVE</span></div>
+
+      <section class="signal-feature" id="latest" aria-labelledby="feature-heading">
+        <div class="signal-feature__head"><span class="section-tag">[01] // ON THE FREQUENCY</span><span class="muted-mono">LATEST TRANSMISSION</span></div>
+        <div class="feature-grid">
+          <div class="feature-main">
+            <p class="tiny-signal">NOW BROADCASTING FROM THE ARCHIVE</p>
+            <h2 id="feature-heading">A voice in the dark<span class="signal-punct">.</span></h2>
+            <p id="feature-summary">The latest episode will appear here automatically once your Substack podcast RSS feed is available.</p>
+            <div id="feature-actions" class="feature-actions"><a href="#episodes" class="text-link">EXPLORE EPISODES <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="feature-panel">
+            <span class="small-label">LIVE SOURCE / NO MANUAL UPDATES</span>
+            <div class="orbit-card"><span class="orbit-ring"></span><span class="orbit-small"></span><span class="orbit-core"></span></div>
+            <p class="feature-panel__foot">PODCAST RSS<br/><span>7894037 / SUBSTACK</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="episodes-section" id="episodes" aria-labelledby="episodes-heading">
+        <div class="section-title-row">
+          <div>
+            <p class="section-tag">[02] // THE LISTENING ROOM</p>
+            <h2 id="episodes-heading">The transmissions<span class="signal-punct">.</span></h2>
+          </div>
+          <a href="https://api.substack.com/feed/podcast/7894037.rss" class="small-rss-link" target="_blank" rel="noopener noreferrer" title="Open the public podcast RSS feed"><span class="rss-symbol" aria-hidden="true">◉</span> RSS / SOURCE ↗</a>
+        </div>
+        <div class="feed-tools">
+          <label class="search-label" for="episode-search">SEARCH THE ARCHIVE</label>
+          <input id="episode-search" type="search" placeholder="Episode title, subject, dispatch…" autocomplete="off" aria-label="Search podcast episodes" />
+          <span id="episode-count" class="feed-counter" aria-live="polite">CONNECTING / RSS</span>
+        </div>
+        <div id="feed-status" class="feed-status" role="status" aria-live="polite">CONTACTING THE SUBSTACK TRANSMISSION…</div>
+        <div id="episode-list" class="episode-list" aria-live="polite"></div>
+        <div id="feed-error" class="feed-error" hidden>
+          <p class="small-label">NO LIVE EPISODE DATA RECEIVED</p>
+          <p>We couldn't retrieve the public feed from this page. The design remains available; the episode list requires the deployed RSS connection. You can also listen directly through Substack.</p>
+          <div class="inline-actions"><button id="retry-feed" class="button button-line" type="button">RETRY TRANSMISSION ↻</button><a class="text-link" href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer">OPEN SUBSTACK ↗</a></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="about-left">
+          <p class="section-tag">[03] // THE ARCHIVE'S DECLARATION</p>
+          <h2 id="about-heading">The city speaks in fragments.<br/><em>So do we.</em></h2>
+          <div class="about-text"><p>MDNT MRKT VOX is the spoken extension of MDNT MRKT CONT., an independent literary continuum shaped by Monet Marcel by Delray. We archive Detroit Gothic, speculative fiction, criticism, performance, and the quieter machinery of culture.</p><p>We are interested in the stories an institution marks absent, the person a ledger fails to count, and the very old human desire to be heard.</p></div>
+          <blockquote>“We archive what the world keeps trying to forget.”</blockquote>
+        </div>
+        <div class="about-right">
+          <p class="section-tag">SIGNAL INDEX</p>
+          <a href="https://linkjar.to/ios/" target="_blank" rel="noopener noreferrer"><span>01 / FICTION</span><strong>INTERNMENT OF SOLACE</strong><b>↗</b></a>
+          <a href="https://linkjar.to/whimsy/" target="_blank" rel="noopener noreferrer"><span>02 / FICTION</span><strong>COMMISSARY OF WHIMSY</strong><b>↗</b></a>
+          <a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer"><span>03 / JOURNAL</span><strong>MDNT MRKT CONT.</strong><b>↗</b></a>
+          <div class="transmission-note"><span>DELRAY / DETROIT</span><span>UNLICENSED IMAGINATION.<br/>NO COMPULSORY APPLAUSE.</span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> MDNT MRKT CONT. / MDNT MRKT VOX</span><span>STAY OPEN. STAY ACTIVE. THE SIGNAL IS ALIVE.</span><a href="#top">BACK TO THE SURFACE ↑</a></footer>
+  </div>
+  <div class="player-bar" id="player-bar" hidden>
+    <div class="player-info"><small>NOW PLAYING // MDNT MRKT VOX</small><strong id="player-title">Transmission</strong></div>
+    <audio id="audio-player" controls preload="none" aria-label="Podcast audio playback"></audio>
+    <button id="close-player" type="button" class="player-close" aria-label="Close player">×</button>
+  </div>
+</body>
+</html>
