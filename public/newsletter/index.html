@@ -4,7 +4,7 @@
 <script>
 (()=>{let posts=[];
 const target=document.getElementById('cards'),search=document.getElementById('filter'),status=document.getElementById('status');
-const plain=t=>{const d=new DOMParser().parseFromString(t||'','text/html');return (d.body.textContent||'').replace(/\\s+/g,' ').trim()};
+const plain=t=>{const d=new DOMParser().parseFromString(t||'','text/html');return (d.body.textContent||'').replace(/\s+/g,' ').trim()};
 const first=(n,tag)=>n.getElementsByTagName(tag)[0]?.textContent?.trim()||'';
 const valid=u=>{try{let x=new URL(u);return x.protocol==='https:'||x.protocol==='http:'?x.href:''}catch{return ''}};
 function render(){const q=search.value.trim().toLowerCase();const found=posts.filter(p=>(p.title+' '+p.desc).toLowerCase().includes(q));target.replaceChildren();found.forEach(p=>{let c=document.createElement('article');c.className='archive-card';let m=document.createElement('span');m.className='label';m.textContent=p.date;let h=document.createElement('h2');h.textContent=p.title;let d=document.createElement('p');d.textContent=p.desc.slice(0,240)+(p.desc.length>240?'…':'');let a=document.createElement('a');a.href=p.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='READ ON SUBSTACK ↗';c.append(m,h,d,a);target.append(c)});status.textContent=found.length+' DISPATCHES / '+posts.length+' IN FEED';if(!found.length){let m=document.createElement('p');m.textContent='No matching public dispatches in this feed.';target.append(m)}}
