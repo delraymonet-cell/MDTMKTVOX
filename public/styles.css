@@ -10,3 +10,22 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 /* Keep the entire approved bird/moon motif visible on phones. */
 @media(max-width:700px){.hero-figure{margin:0;height:235px;justify-content:center}.hero-figure img{width:100%;max-width:100%;right:0;top:13px}}
+
+
+/* Photo-first podcast archive: cards always retain a visual even without episode art. */
+.episode-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:24px;padding-top:22px;align-items:stretch}
+.episode{display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0;background:#151515;border:1px solid #3d3d35;padding:0;transition:border-color .18s,transform .18s}
+.episode:hover{border-color:var(--signal);transform:translateY(-3px)}
+.episode-art{width:100%;height:auto;aspect-ratio:1/1;display:block;object-fit:cover;border:0;border-bottom:1px solid #3d3d35;background:#25251f}
+.episode-fallback{width:100%;height:auto;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:clamp(40px,5vw,76px);background:radial-gradient(circle at 45% 42%,#303f33,#151915 55%,#16120f);color:var(--signal)}
+.episode-art-trigger{display:block;border:0;background:none;padding:0;color:inherit;text-align:inherit;width:100%;cursor:pointer}
+.episode-art-trigger:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.episode-body{padding:18px 19px 6px;flex:1}
+.episode-meta{gap:8px;font-size:9px}
+.episode-title{font-size:clamp(18px,1.6vw,22px);margin:12px 0}
+.episode-desc{font-size:12px;line-height:1.6}
+.episode-actions{display:flex;flex-wrap:wrap;gap:9px;padding:17px 19px 20px}
+.episode-play,.episode-link{flex:1;text-align:center;min-width:90px;justify-content:center}
+.episode-link{display:inline-flex;align-items:center}
+@media(max-width:700px){.episode-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.episode{display:flex;gap:0;padding:0}.episode-art{height:auto;width:100%}.episode-body{padding:12px 12px 4px}.episode-title{font-size:16px}.episode-desc{font-size:11px}.episode-actions{grid-column:auto;padding:12px;flex-direction:column}.episode-play,.episode-link{width:100%;min-width:0}.episode-meta{font-size:8px}}
+@media(max-width:440px){.episode-list{grid-template-columns:1fr}.episode-desc{font-size:12px}.episode-actions{flex-direction:row}}
