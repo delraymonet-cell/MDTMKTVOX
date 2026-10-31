@@ -1,0 +1,71 @@
+name: MDNT MRKT VOX two-hour site watch
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: mdnt-site-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check live pages and security basics
+        id: scan
+        continue-on-error: true
+        run: node scripts/site-watch.mjs
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-watch-report
+          path: site-watch-report.json
+          retention-days: 14
+      - name: Manage site health issue and optional one-time recovery
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          CHECK_FAILED: ${{ steps.scan.outcome == 'failure' }}
+          ROUTES_UNHEALTHY: ${{ steps.scan.outputs.unhealthy }}
+          NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const owner=context.repo.owner,repo=context.repo.repo;
+            const title='[Site Watch] MDNT MRKT VOX website needs attention';
+            const failed=process.env.CHECK_FAILED==='true';
+            const issues=await github.paginate(github.rest.issues.listForRepo,{owner,repo,state:'open',per_page:100});
+            const existing=issues.find(x=>!x.pull_request&&x.title===title);
+            if(!failed){
+              if(existing) await github.rest.issues.createComment({owner,repo,issue_number:existing.number,body:'Automated check recovered. Resolving.'});
+              if(existing) await github.rest.issues.update({owner,repo,issue_number:existing.number,state:'closed'});
+              return;
+            }
+            let report={summary:'Check failed; inspect Actions logs.'};
+            try{report=JSON.parse(fs.readFileSync('site-watch-report.json','utf8'))}catch{}
+            const run='https://github.com/'+owner+'/'+repo+'/actions/runs/'+context.runId;
+            const body='Scheduled non-invasive website check detected an issue.\\n\\n'+String(report.summary||'Unknown error').slice(0,3000)+'\\n\\nWorkflow: '+run+'\\n\\nNo automated source edits were made.';
+            if(existing){
+              await github.rest.issues.createComment({owner,repo,issue_number:existing.number,body});
+              return;
+            }
+            const hook=process.env.NETLIFY_BUILD_HOOK_URL||'';
+            if(Number(process.env.ROUTES_UNHEALTHY||0)>0&&hook.startsWith('https://api.netlify.com/build_hooks/')){
+              try{
+                const r=await fetch(hook,{method:'POST',signal:AbortSignal.timeout(12000)});
+                core.info('Optional Netlify rebuild request: HTTP '+r.status);
+              }catch(e){core.warning('Recovery request failed: '+e.message)}
+            }
+            await github.rest.issues.create({owner,repo,title,body});
+      - name: Fail if checks failed
+        if: steps.scan.outcome == 'failure'
+        run: exit 1
