@@ -50,6 +50,27 @@
 .archive-rank.unknown{color:#9c9c96}
 .archive-alt .archive-genre{margin-bottom:30px}
 .archive-alt .archive-genre-title{font-size:23px}
+
+/* Restored charcoal grid with handwritten-style genre color coding */
+#cards,#alternates{display:block}
+.archive-shell{background:#0a0a0a}
+.archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:20px}
+.archive-card{background:#111112;border:1px solid #393939;--genre-accent:#d8ef57}
+.archive-card:hover{border-color:var(--genre-accent)}
+.archive-card .cover{background:#0d0e0f;color:#f5f5f0;min-height:210px;aspect-ratio:5/4;border-bottom:1px solid #292929}
+.archive-card .cover:before{border-color:var(--genre-accent);opacity:.46}
+.archive-card .cover:after{display:none}
+.archive-card .cover-mark{font-family:Georgia,'Times New Roman',serif;font-size:clamp(17px,2vw,24px);font-style:italic;font-weight:600;letter-spacing:-.02em;line-height:1.2;color:var(--genre-accent);text-transform:none}
+.archive-card .cover-title{font-size:clamp(22px,2.35vw,31px);line-height:1.13;text-shadow:none;color:#f5f5f0}
+.archive-card .cover-foot{color:#a8a8a8;font-size:9px}
+.archive-card .label{color:var(--genre-accent)}
+.archive-card .edition-links a{color:var(--genre-accent)}
+.archive-genre-head{border-bottom-color:var(--genre-accent,#48483e)}
+.archive-genre-title{color:var(--genre-accent,#f5f5f0);font-style:italic}
+.archive-featured .archive-card{border-color:#464841}
+.archive-alt .archive-card .cover{aspect-ratio:5/3;min-height:140px}
+@media(max-width:580px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.archive-card .cover{min-height:145px;padding:15px}.archive-card .cover-mark{font-size:17px}.archive-card .cover-title{font-size:20px}}
+@media(max-width:390px){.archive-grid{grid-template-columns:1fr}.archive-card .cover{aspect-ratio:5/3}}
 </style></head><body><header class="archive-topbar"><a href="/"><strong>MDNT MRKT</strong> <span style="color:#D8EF57">CONT.</span></a><nav aria-label="Sections"><a href="/">VOX / PODCAST</a><a href="/newsletter/">NEWSLETTER</a><a href="/library/">PRESS / PDF LIBRARY</a><a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener">SUBSTACK ↗</a></nav></header><main class="archive-shell"><p class="archive-kicker">[03] // PRESS / PUBLICATION REGISTER</p><h1 class="archive-title">The paper archive<span style="color:#E48667">.</span></h1><p class="archive-intro">Published stories, theatre, poetry, criticism and experimental work by Monet Marcel by Delray and MDNT MRKT PRESS. The files remain on their original Linkjar and PDFLink reading pages. Select a title to open its hosted reading page. Multiple editions of the same work are grouped together when identified. All original URLs remain in the catalog.</p><div class="archive-toolbar"><input id="filter" type="search" aria-label="Search the publication library" placeholder="SEARCH TITLES, GENRES…"><select id="genre" aria-label="Filter by format"><option value="">ALL PUBLICATIONS</option><option>PDF</option><option>Fiction</option><option>Theatre</option><option>Magazine</option><option>Essays</option><option>Poetry</option><option>Journal</option><option>Working Notes</option><option>PowerPoint</option><option>Word</option><option>Flipbook</option><option>Draft</option></select></div><div class="archive-featured" id="featured-section"><h2 class="archive-heading">Most viewed<span style="color:#E48667">.</span></h2><p class="archive-subtitle">VERIFIED COUNTS FIRST · HISTORIC SNAPSHOT, NOT LIVE ANALYTICS</p><div class="archive-grid" id="featured"></div></div><h2 class="archive-heading">Browse by genre<span style="color:#E48667">.</span></h2><p class="archive-subtitle">SIMILAR WORKS TOGETHER · KNOWN VIEW COUNTS RANKED HIGH TO LOW · OTHER WORKS A–Z</p><p class="archive-status" id="status" aria-live="polite"></p><div class="archive-actions"><button type="button" id="reset">CLEAR FILTERS</button><span class="archive-count">LINKS OPEN IN A NEW TAB · LINKJAR / PDFLINK</span></div><div class="archive-grid" id="cards"></div><section class="archive-alt" id="archive-alternates"><h2 class="archive-heading">Alternate editions &amp; earlier links<span style="color:#E48667">.</span></h2><p class="archive-subtitle">OLDER AND SECONDARY EDITIONS PRESERVED BELOW THE PRIMARY REGISTER</p><div class="archive-grid" id="alternates"></div></section><div class="archive-notice"><strong>READING LINK HELP</strong> · Publications open on Linkjar or PDFLink, not inside this website. If one fails, try another listed edition where available, or <a href="mailto:delraymonet@gmail.com?subject=MDNT%20MRKT%20Library%20broken%20link" style="color:#d8ef57">report the title by email</a>. A link shown here has not necessarily been verified by its external host. Unreleased draft records are excluded.</div></main><script>
 (()=>{'use strict';
 const cards=document.getElementById('cards'),featured=document.getElementById('featured'),
@@ -60,12 +81,12 @@ status=document.getElementById('status'),reset=document.getElementById('reset');
 let records=[];
 const observedViews={'vox-002':34,'vox-031':24,'vox-035':10,'vox-001':5};
 const alternateToPrimary={'vox-026':'vox-020','vox-042':'vox-024','vox-003':'vox-032'};
-const palettes=[
-['#203d38','#e5e6ce'],['#562d35','#ffe2b6'],['#25314f','#e0d7b8'],
-['#494027','#f2e8cd'],['#3a2844','#eadfef'],['#173b43','#d6f1ec'],
-['#56382d','#f3dfc5'],['#30302b','#d8ef57'],['#32402b','#ebe5ce'],
-['#4b2d3b','#ffeadf'],['#223a42','#d8e5ea'],['#443929','#e9e1d2']
-];
+const genreColors={
+ 'Fiction':'#D9A5CA','Theatre':'#E7A078','Poetry':'#A6C9FA',
+ 'Magazine':'#D8EF57','Essays & Criticism':'#E8BF81',
+ 'Research & Studio':'#B8A8F1','Writing':'#A7D5C0','Lecture':'#F3B6A1'
+};
+const genreColor=category=>genreColors[category]||'#DDD4C6';
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
 const safeUrl=s=>{try{const u=new URL(s);return u.protocol==='https:'&&['linkjar.to','pdflink.to'].includes(u.hostname)?u.href:null}catch{return null}};
 const hash=s=>{let v=0;for(let i=0;i<s.length;i++)v=((v<<5)-v+s.charCodeAt(i))|0;return Math.abs(v)};
@@ -75,19 +96,18 @@ const views=b=>hasViews(b)?observedViews[b.id]:null;
 const byVisibility=(a,b)=>Number(hasViews(b))-Number(hasViews(a)) || (hasViews(a)?views(b)-views(a):0) || a.title.localeCompare(b.title,undefined,{sensitivity:'base'});
 const genreSort=(a,b,groups)=>{const metric=genre=>groups.get(genre).reduce((sum,work)=>sum+(views(work)||0),0);return metric(b)-metric(a)||a.localeCompare(b)};
 const titleFor=b=>b.id==='vox-032'?'35 Years Old':b.title;
-function coverFor(b,mode){
- const color=palettes[hash(b.id)%palettes.length],cover=el('div','cover');
- cover.style.setProperty('--cover-bg',color[0]);cover.style.setProperty('--cover-ink',color[1]);
- cover.dataset.pattern=String(hash(b.title)%4);
- cover.append(el('span','cover-mark','MDNT MRKT / '+b.category.toUpperCase()),
+function coverFor(b){
+ const cover=el('div','cover');
+ cover.append(el('span','cover-mark',b.category),
  el('strong','cover-title',titleFor(b)),el('span','cover-foot','MONET MARCEL BY DELRAY'));
  cover.setAttribute('role','img');
- cover.setAttribute('aria-label','Distinctive typographic cover treatment for '+b.title+'; not the original book cover');
+ cover.setAttribute('aria-label','Dark typographic card for '+b.title+' with '+b.category+' accent');
  return cover;
 }
 function cardFor(b,options={}){
  const u=safeUrl(b.url);if(!u)return null;
  const c=el('article','archive-card'),anchor=el('a','episode-art-trigger');
+ c.style.setProperty('--genre-accent',genreColor(b.category));
  anchor.href=u;anchor.target='_blank';anchor.rel='noopener noreferrer';
  anchor.setAttribute('aria-label','Open '+b.title+' on '+new URL(u).hostname);
  anchor.append(coverFor(b));c.append(anchor);
@@ -116,6 +136,7 @@ function showByGenre(target,items,options={}){
  for(const name of names){
    const sorted=groups.get(name).slice().sort(byVisibility);
    const section=el('section','archive-genre');
+   section.style.setProperty('--genre-accent',genreColor(name));
    const heading=el('div','archive-genre-head');
    heading.append(el('h3','archive-genre-title',name));
    const measured=sorted.filter(hasViews).length;
