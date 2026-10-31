@@ -23,7 +23,9 @@
       "title": "35 YO",
       "category": "Poetry",
       "format": "PDF",
-      "url": "https://pdflink.to/thirtyfive/"
+      "url": "https://pdflink.to/thirtyfive/",
+      "description": "A fractured first-person record of isolation, queer self-translation, chemical sleep, and the effort to survive without turning pain into a neat redemption story. These poems preserve unfinished thoughts and emotional loops instead of smoothing them into certainty.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-004",
@@ -93,14 +95,18 @@
       "title": "The Inheritance of Fear — Proposal Pack",
       "category": "Research & Studio",
       "format": "PDF",
-      "url": "https://linkjar.to/feakpk/"
+      "url": "https://linkjar.to/feakpk/",
+      "description": "A facilitator's discussion packet examines the fears families and communities pass down as rules. Guided prompts move from gender expectations and protective secrecy to chosen kinship, asking when an instruction offered as care becomes a limit on freedom.",
+      "descriptionSource": "working-notes-reviewed"
     },
     {
       "id": "vox-013",
       "title": "The Inheritance of Fear",
       "category": "Research & Studio",
       "format": "PowerPoint",
-      "url": "https://linkjar.to/fear/"
+      "url": "https://linkjar.to/fear/",
+      "description": "This guided forum asks what happens when inherited advice about identity, safety, and belonging outlives the danger that shaped it. The discussion treats privacy as a choice rather than a flaw and invites participants to examine what they wish to keep or revise.",
+      "descriptionSource": "working-notes-reviewed"
     },
     {
       "id": "vox-014",
@@ -142,7 +148,9 @@
       "title": "Lock & Bolt",
       "category": "Fiction",
       "format": "PDF",
-      "url": "https://linkjar.to/lbolt/"
+      "url": "https://linkjar.to/lbolt/",
+      "description": "When Asher Aster inexplicably drowns aboard a city bus, cemetery groundskeeper Jay honors his request for burial among flowers. Striking bees, unusual deaths, and municipal paperwork turn the graveyard into a darkly funny test of whether the dead are counted or truly seen.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-018",
@@ -234,7 +242,9 @@
       "title": "Just Give Me Water",
       "category": "Writing",
       "format": "PDF",
-      "url": "https://pdflink.to/water/"
+      "url": "https://pdflink.to/water/",
+      "description": "A glass of water becomes the object of a twenty-year absence in these raw, broken-voice poems. Repetition and abrupt confession move between grief, the impulse to stay upright, and the first recollection of heroin use.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-030",
@@ -255,7 +265,9 @@
       "title": "35 Years Old",
       "category": "Poetry",
       "format": "PDF",
-      "url": "https://pdflink.to/735yo/"
+      "url": "https://pdflink.to/735yo/",
+      "description": "The poems of Thirty Five Years Old grow from phone notes, unsent messages, and the exhaustion of wanting closeness while distrusting it. Fragmented lines trace addiction's shadow, queer invisibility, and the long work of speaking without self-editing.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-033",
@@ -300,16 +312,18 @@
       "category": "Fiction",
       "format": "Publication",
       "url": "https://linkjar.to/caldercity/",
-      "description": "A literary dispatch from the Michigan imagination.",
-      "id": "vox-038"
+      "description": "Nine linked stories map the west side of Grand Rapids through the eyes of Dangr Mouse, a witness who stays rather than leaves. A laundromat, church, and neighborhood bulletin board hold the distinct lives of residents whose memory makes a community.",
+      "id": "vox-038",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "The Humidor — Lecture 2",
       "category": "Essays & Criticism",
       "format": "Publication",
       "url": "https://linkjar.to/lecture2/",
-      "description": "A continuation of the Humidor lecture series.",
-      "id": "vox-039"
+      "description": "In the second Humidor lecture, brining and a smoker's drying rack become models for creative distribution. Salt, sugar, and water stand beside time, platform, and audience as the essay studies the interval between publishing work and making it resonate.",
+      "id": "vox-039",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "Once: On Poetic Form",
@@ -357,8 +371,9 @@
       "category": "Theatre",
       "format": "Publication",
       "url": "https://linkjar.to/nodply/",
-      "description": "A dramatic work concerned with decline.",
-      "id": "vox-045"
+      "description": "In Hollow Wood, a sentient mirror named Care becomes both witness and captive. Across interrogations separated by centuries, DangR, Heron Halo, and investigators confront creation, identity, punishment, and an apology whose words have been withheld too long.",
+      "id": "vox-045",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "CLWNTWN",
@@ -407,8 +422,9 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://linkjar.to/litmod/",
-      "description": "A publication in the DangR body of work.",
-      "id": "vox-051"
+      "description": "Two men fleeing the law take shelter in a haunted Grand Rapids rectory. As Mouse and Cornbread encounter a presence that witnesses more than it threatens, the novel turns inherited debt, guilt, and the grammar of what has already happened into a theory of haunting.",
+      "id": "vox-051",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "[Draft] My PDF (Linkjar)",
