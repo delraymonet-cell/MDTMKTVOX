@@ -8,7 +8,13 @@
 - Obsidian `#0A0A0A`, Bone `#F5F5F0`, Signal `#D8EF57`, Oxide `#E48667`, River `#A9D0C5`.
 - Responsive desktop/mobile styling, live podcast episode index, newest-episode feature, episode search, HTML audio player, Substack links, and RSS source link.
 
-## RSS source
+## Merchandise preview
+
+`/merch/` is the MDNT MRKT CONT. collection preview: five slogan studies, six proposed apparel/accessory blanks, and a separate MiiR custom-batch note. It uses the current monochrome house identity and does not accept orders. Supplier specification links are not finished-product checkout links.
+
+See [the dated sourcing report](MERCHANDISE-RESEARCH.md) for product models, vendor comparisons, source URLs, naming rules and the remaining steps before opening orders. The page works without JavaScript or a build step.
+
+## Podcast RSS source
 
 `https://api.substack.com/feed/podcast/7894037.rss`
 
