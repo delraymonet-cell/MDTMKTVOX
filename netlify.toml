@@ -34,3 +34,14 @@
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-store"
+
+# Explicit analytics page route for Netlify's static publisher.
+[[redirects]]
+  from = "/admin/analytics"
+  to = "/admin/analytics/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/analytics/"
+  to = "/admin/analytics/index.html"
+  status = 200
