@@ -65,6 +65,6 @@ const report={checkedAt:new Date().toISOString(),origin:ORIGIN,
 writeFileSync('site-watch-report.json',JSON.stringify(report,null,2));
 if(process.env.GITHUB_OUTPUT){
  const {appendFileSync}=await import('node:fs');
- appendFileSync(process.env.GITHUB_OUTPUT,'critical='+critical.length+'\nfailures='+failed.length+'\n');
+ appendFileSync(process.env.GITHUB_OUTPUT,'critical='+critical.length+'\nfailures='+failed.length+'\nunhealthy='+results.filter(r=>!r.ok&&['Homepage','Library','Analytics dashboard'].includes(r.label)).length+'\n');
 }
 if(failed.length)process.exitCode=1;
