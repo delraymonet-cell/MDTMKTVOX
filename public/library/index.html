@@ -41,7 +41,16 @@
 .archive-alt .archive-card .cover:after{opacity:.12}
 @media(max-width:580px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.archive-card .cover{min-height:175px;padding:14px}.cover-title{font-size:clamp(18px,5vw,27px)}.archive-card .archive-card-content{padding:13px}.archive-card .archive-card-content h2{font-size:17px}.archive-card .archive-card-content p{font-size:12px}.archive-card .cover-mark,.archive-card .cover-foot{font-size:8px}}
 @media(max-width:390px){.archive-grid{grid-template-columns:1fr}.archive-card .cover{aspect-ratio:4/3}}
-</style></head><body><header class="archive-topbar"><a href="/"><strong>MDNT MRKT</strong> <span style="color:#D8EF57">CONT.</span></a><nav aria-label="Sections"><a href="/">VOX / PODCAST</a><a href="/newsletter/">NEWSLETTER</a><a href="/library/">PRESS / PDF LIBRARY</a><a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener">SUBSTACK ↗</a></nav></header><main class="archive-shell"><p class="archive-kicker">[03] // PRESS / PUBLICATION REGISTER</p><h1 class="archive-title">The paper archive<span style="color:#E48667">.</span></h1><p class="archive-intro">Published stories, theatre, poetry, criticism and experimental work by Monet Marcel by Delray and MDNT MRKT PRESS. The files remain on their original Linkjar and PDFLink reading pages. Select a title to open its hosted reading page. Multiple editions of the same work are grouped together when identified. All original URLs remain in the catalog.</p><div class="archive-toolbar"><input id="filter" type="search" aria-label="Search the publication library" placeholder="SEARCH TITLES, GENRES…"><select id="genre" aria-label="Filter by format"><option value="">ALL PUBLICATIONS</option><option>PDF</option><option>Fiction</option><option>Theatre</option><option>Magazine</option><option>Essays</option><option>Poetry</option><option>Journal</option><option>Working Notes</option><option>PowerPoint</option><option>Word</option><option>Flipbook</option><option>Draft</option></select></div><div class="archive-featured" id="featured-section"><h2 class="archive-heading">Most viewed<span style="color:#E48667">.</span></h2><p class="archive-subtitle">SELECT TITLES WITH REPORTED VIEW COUNTS · SNAPSHOT, NOT LIVE ANALYTICS</p><div class="archive-grid" id="featured"></div></div><h2 class="archive-heading">The full register<span style="color:#E48667">.</span></h2><p class="archive-status" id="status" aria-live="polite"></p><div class="archive-actions"><button type="button" id="reset">CLEAR FILTERS</button><span class="archive-count">LINKS OPEN IN A NEW TAB · LINKJAR / PDFLINK</span></div><div class="archive-grid" id="cards"></div><section class="archive-alt" id="archive-alternates"><h2 class="archive-heading">Alternate editions &amp; earlier links<span style="color:#E48667">.</span></h2><p class="archive-subtitle">OLDER AND SECONDARY EDITIONS PRESERVED BELOW THE PRIMARY REGISTER</p><div class="archive-grid" id="alternates"></div></section><div class="archive-notice"><strong>READING LINK HELP</strong> · Publications open on Linkjar or PDFLink, not inside this website. If one fails, try another listed edition where available, or <a href="mailto:delraymonet@gmail.com?subject=MDNT%20MRKT%20Library%20broken%20link" style="color:#d8ef57">report the title by email</a>. A link shown here has not necessarily been verified by its external host. Unreleased draft records are excluded.</div></main><script>
+
+.archive-genre{margin:0 0 48px;scroll-margin-top:24px}
+.archive-genre-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px solid #48483e;padding:0 0 14px;margin:25px 0 20px}
+.archive-genre-title{font:700 clamp(23px,3vw,34px) Georgia,serif;margin:0;color:#f5f5f0}
+.archive-genre-meta{font:11px 'DM Mono',monospace;color:#a9d0c5}
+.archive-rank{display:inline-block;font:10px 'DM Mono',monospace;letter-spacing:.06em;color:#d8ef57}
+.archive-rank.unknown{color:#9c9c96}
+.archive-alt .archive-genre{margin-bottom:30px}
+.archive-alt .archive-genre-title{font-size:23px}
+</style></head><body><header class="archive-topbar"><a href="/"><strong>MDNT MRKT</strong> <span style="color:#D8EF57">CONT.</span></a><nav aria-label="Sections"><a href="/">VOX / PODCAST</a><a href="/newsletter/">NEWSLETTER</a><a href="/library/">PRESS / PDF LIBRARY</a><a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener">SUBSTACK ↗</a></nav></header><main class="archive-shell"><p class="archive-kicker">[03] // PRESS / PUBLICATION REGISTER</p><h1 class="archive-title">The paper archive<span style="color:#E48667">.</span></h1><p class="archive-intro">Published stories, theatre, poetry, criticism and experimental work by Monet Marcel by Delray and MDNT MRKT PRESS. The files remain on their original Linkjar and PDFLink reading pages. Select a title to open its hosted reading page. Multiple editions of the same work are grouped together when identified. All original URLs remain in the catalog.</p><div class="archive-toolbar"><input id="filter" type="search" aria-label="Search the publication library" placeholder="SEARCH TITLES, GENRES…"><select id="genre" aria-label="Filter by format"><option value="">ALL PUBLICATIONS</option><option>PDF</option><option>Fiction</option><option>Theatre</option><option>Magazine</option><option>Essays</option><option>Poetry</option><option>Journal</option><option>Working Notes</option><option>PowerPoint</option><option>Word</option><option>Flipbook</option><option>Draft</option></select></div><div class="archive-featured" id="featured-section"><h2 class="archive-heading">Most viewed<span style="color:#E48667">.</span></h2><p class="archive-subtitle">VERIFIED COUNTS FIRST · HISTORIC SNAPSHOT, NOT LIVE ANALYTICS</p><div class="archive-grid" id="featured"></div></div><h2 class="archive-heading">Browse by genre<span style="color:#E48667">.</span></h2><p class="archive-subtitle">SIMILAR WORKS TOGETHER · KNOWN VIEW COUNTS RANKED HIGH TO LOW · OTHER WORKS A–Z</p><p class="archive-status" id="status" aria-live="polite"></p><div class="archive-actions"><button type="button" id="reset">CLEAR FILTERS</button><span class="archive-count">LINKS OPEN IN A NEW TAB · LINKJAR / PDFLINK</span></div><div class="archive-grid" id="cards"></div><section class="archive-alt" id="archive-alternates"><h2 class="archive-heading">Alternate editions &amp; earlier links<span style="color:#E48667">.</span></h2><p class="archive-subtitle">OLDER AND SECONDARY EDITIONS PRESERVED BELOW THE PRIMARY REGISTER</p><div class="archive-grid" id="alternates"></div></section><div class="archive-notice"><strong>READING LINK HELP</strong> · Publications open on Linkjar or PDFLink, not inside this website. If one fails, try another listed edition where available, or <a href="mailto:delraymonet@gmail.com?subject=MDNT%20MRKT%20Library%20broken%20link" style="color:#d8ef57">report the title by email</a>. A link shown here has not necessarily been verified by its external host. Unreleased draft records are excluded.</div></main><script>
 (()=>{'use strict';
 const cards=document.getElementById('cards'),featured=document.getElementById('featured'),
 alternates=document.getElementById('alternates'),alternateSection=document.getElementById('archive-alternates'),
@@ -61,6 +70,10 @@ const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.classNam
 const safeUrl=s=>{try{const u=new URL(s);return u.protocol==='https:'&&['linkjar.to','pdflink.to'].includes(u.hostname)?u.href:null}catch{return null}};
 const hash=s=>{let v=0;for(let i=0;i<s.length;i++)v=((v<<5)-v+s.charCodeAt(i))|0;return Math.abs(v)};
 const primaryFor=id=>alternateToPrimary[id]||id;
+const hasViews=b=>Number.isFinite(observedViews[b.id]);
+const views=b=>hasViews(b)?observedViews[b.id]:null;
+const byVisibility=(a,b)=>Number(hasViews(b))-Number(hasViews(a)) || (hasViews(a)?views(b)-views(a):0) || a.title.localeCompare(b.title,undefined,{sensitivity:'base'});
+const genreSort=(a,b,groups)=>{const metric=genre=>groups.get(genre).reduce((sum,work)=>sum+(views(work)||0),0);return metric(b)-metric(a)||a.localeCompare(b)};
 const titleFor=b=>b.id==='vox-032'?'35 Years Old':b.title;
 function coverFor(b,mode){
  const color=palettes[hash(b.id)%palettes.length],cover=el('div','cover');
@@ -82,8 +95,8 @@ function cardFor(b,options={}){
  body.append(el('span','label',b.category.toUpperCase()+' / '+b.format.toUpperCase()),
  el('h2','',titleFor(b)),
  el('p','',b.description||'A work from the MDNT MRKT literary archive.'));
- if(typeof observedViews[b.id]==='number')
- body.append(el('span','views',observedViews[b.id]+' REPORTED VIEWS · OCT 2026'));
+ if(hasViews(b)) body.append(el('span','views',observedViews[b.id]+' REPORTED VIEWS · OCT 2026'));
+ else body.append(el('span','archive-rank unknown','VIEW COUNT NOT AVAILABLE'));
  const links=el('div','edition-links'),read=el('a','',options.alternate?'OPEN ALTERNATE EDITION ↗':b.format==='Flipbook'?'OPEN FLIPBOOK ↗':'OPEN PUBLICATION ↗');
  read.href=u;read.target='_blank';read.rel='noopener noreferrer';links.append(read);body.append(links);
  const help=el('div','link-help','Link not opening? '),report=el('a','','Report it');
@@ -95,6 +108,31 @@ function show(target,arr,opts={}){
  const frag=document.createDocumentFragment();
  for(const b of arr){const c=cardFor(b,opts);if(c)frag.append(c)}target.append(frag);
 }
+function showByGenre(target,items,options={}){
+ target.replaceChildren();
+ const groups=new Map();
+ for(const b of items){if(!groups.has(b.category))groups.set(b.category,[]);groups.get(b.category).push(b);}
+ const names=[...groups.keys()].sort((a,b)=>genreSort(a,b,groups));
+ for(const name of names){
+   const sorted=groups.get(name).slice().sort(byVisibility);
+   const section=el('section','archive-genre');
+   const heading=el('div','archive-genre-head');
+   heading.append(el('h3','archive-genre-title',name));
+   const measured=sorted.filter(hasViews).length;
+   heading.append(el('span','archive-genre-meta',sorted.length+' TITLES · '+measured+' WITH REPORTED VIEWS'));
+   section.append(heading);
+   const grid=el('div','archive-grid');
+   for(let i=0;i<sorted.length;i++){
+     const b=sorted[i],card=cardFor(b,options);
+     if(!card)continue;
+     const content=card.querySelector('.archive-card-content');
+     if(content)content.prepend(el('span','archive-rank'+(hasViews(b)?'':' unknown'),hasViews(b)?'RANK '+(sorted.filter(hasViews).findIndex(x=>x.id===b.id)+1)+' BY REPORTED VIEWS':'UNRANKED · NO VIEW DATA'));
+     grid.append(card);
+   }
+   section.append(grid);
+   target.append(section);
+ }
+}
 function matches(b,q,type){
  return [b.title,b.description||'',b.category,b.format].join(' ').toLocaleLowerCase().includes(q) &&
  (!type||type==='cat:'+b.category||type==='fmt:'+b.format);
@@ -103,15 +141,14 @@ function render(){
  const q=query.value.trim().toLocaleLowerCase(),type=select.value;
  const main=records.filter(b=>!alternateToPrimary[b.id]),alternate=records.filter(b=>alternateToPrimary[b.id]);
  const filtered=main.filter(b=>matches(b,q,type));
- show(cards,filtered);
+ showByGenre(cards,filtered);
  const alt=alternate.filter(b=>matches(b,q,type));
- show(alternates,alt,{alternate:true});
+ showByGenre(alternates,alt,{alternate:true});
  alternateSection.hidden=!alt.length;
- const hot=main.filter(b=>Object.hasOwn(observedViews,b.id)&&matches(b,q,type))
- .sort((a,b)=>observedViews[b.id]-observedViews[a.id]);
+ const hot=main.filter(b=>hasViews(b)&&matches(b,q,type)).sort(byVisibility);
  show(featured,hot);
  featuredSection.hidden=!hot.length;
- status.textContent=filtered.length+' TITLES IN THE MAIN REGISTER · '+alt.length+' ALTERNATE EDITIONS · '+records.length+' PUBLIC LINKS';
+ status.textContent=filtered.length+' MAIN TITLES IN '+new Set(filtered.map(x=>x.category)).size+' GENRES · '+alt.length+' ALTERNATE EDITIONS · '+records.length+' PUBLIC LINKS';
  if(!filtered.length)cards.append(el('p','archive-status','No titles match this search.'));
 }
 fetch('/library/catalog.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json()}).then(data=>{
