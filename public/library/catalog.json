@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "byline": "Monet Marcel by Delray",
-  "lastUpdated": "2026-10-30",
-  "editorialNote": "All submitted publication links are included; two links explicitly labeled [Draft] are identified as drafts, not finished works.",
+  "lastUpdated": "2026-10-31",
+  "editorialNote": "Catalog blurbs are specific to their works when manuscript text or author-provided source summaries are available. Unreviewed entries retain existing copy pending access to the publication itself; do not present unverified descriptions as read manuscripts.",
   "items": [
     {
       "id": "vox-001",
@@ -30,7 +30,9 @@
       "title": "GRENBK:DTW",
       "category": "Magazine",
       "format": "PDF",
-      "url": "https://pdflink.to/grenbka1/"
+      "url": "https://pdflink.to/grenbka1/",
+      "description": "Detroit's queer cultural life, the closing of Spot Lite, Paradise Valley's contested memory, and the first installment of New August share the pages of this inaugural literary review. Criticism, reportage, and fiction refuse the city's tidy official story.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-005",
@@ -74,7 +76,8 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://pdflink.to/ppbois/",
-      "description": "A title from the Palmer Park literary cycle."
+      "description": "At Palmer Park, Lola, Charles, Manson, Paxton, and Gloria May occupy a stage mapped across a gazebo, pickleball court, and cruising ground. This theatrical outline uses sonnet choruses and shifting character zones to examine queer identity, intimacy, and the park's social boundaries.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-011",
@@ -82,7 +85,8 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://linkjar.to/winter/",
-      "description": "A winter tale from the Delray speculative-fiction universe."
+      "description": "When a blizzard swallows Delray, Margot Johannesburg-Mintz keeps her harbor bistro serving soup while an old Hungarian weather tale takes flesh. A wandering scholar, an immense hungry visitor, and Axiom's absurd rules turn one shared meal into an act of civic defiance.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-012",
@@ -104,7 +108,8 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://linkjar.to/ios/",
-      "description": "A boy discovers a buried mechanical witness beneath Delray and tries to revive its heart."
+      "description": "Thirteen-year-old Asa Bell uncovers a buried mechanical listener beneath a former Delray switching yard. As its heart responds to unfinished stories, he confronts a city that would rather classify grief than hear it, and the difference between reviving a witness and claiming ownership.",
+      "descriptionSource": "source-summary"
     },
     {
       "id": "vox-054",
@@ -112,7 +117,8 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://linkjar.to/3270cs/",
-      "description": "Book II of Internment of Solace. After the flood, Asa Bell and his family rebuild Delray's damaged infrastructure and uncover the mechanical witness's past as Axiom moves to reclaim it."
+      "description": "In the aftermath of Delray's flood, Asa Bell and his family repair damaged infrastructure while Axiom moves to reclaim the mechanical listener. The second Solace installment follows a struggle over who may hold the city's memories and the machinery that bears them.",
+      "descriptionSource": "source-summary"
     },
     {
       "id": "vox-015",
@@ -120,7 +126,8 @@
       "category": "Fiction",
       "format": "PDF",
       "url": "https://linkjar.to/whimsy/",
-      "description": "A girl descends into Delray's underground economy of strange markets and stranger citizens."
+      "description": "A girl enters the market beneath Delray, where ghosts, ghouls, wolves, and rival clans trade what the white market has excluded. Commerce becomes a contest over care, value, and who gets to exist outside Axiom's books.",
+      "descriptionSource": "source-summary"
     },
     {
       "id": "vox-016",
@@ -156,14 +163,18 @@
       "title": "Diggers — 2011 Edition",
       "category": "Theatre",
       "format": "PDF",
-      "url": "https://linkjar.to/epub2011/"
+      "url": "https://linkjar.to/epub2011/",
+      "description": "A retired gravedigger digs his own grave each night and fills it each morning. When his son returns carrying a new name, father and child collide over inheritance, loss, and who has the right to define a life. Gretchen's silent perspective complicates what either man thinks he knows.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-021",
       "title": "re(Fill)",
       "category": "Essays & Criticism",
       "format": "PDF",
-      "url": "https://linkjar.to/refill/"
+      "url": "https://linkjar.to/refill/",
+      "description": "Two nonfiction essays probe the ways time and treatment alter a family. In 90PLUS HIGH, a grandfather's hip surgery leads to questions about opioid prescriptions, dependence, and extreme old age; TIME IS ALL WE ASK FOR confronts mourning through the sound and limits of elegy.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-022",
@@ -198,7 +209,9 @@
       "title": "Diggers — 2011 Edition (archive copy)",
       "category": "Theatre",
       "format": "PDF",
-      "url": "https://pdflink.to/ogdig/"
+      "url": "https://pdflink.to/ogdig/",
+      "description": "Archive edition of Diggers: a gravedigger's daily ritual of opening and closing a grave frames a family struggle over grief, a son's chosen name, and the claims of the past. The play brings housing bureaucracy and intimacy into the same backyard.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-027",
@@ -212,7 +225,9 @@
       "title": "Clwns Bund",
       "category": "Fiction",
       "format": "PDF",
-      "url": "https://pdflink.to/clwns2/"
+      "url": "https://pdflink.to/clwns2/",
+      "description": "In Hollow Wood, DangR's role as Teller turns objects into evidence of what people survived. Tooth-clerks, beetle indexers, and rules governing 'authorized whimsy' make this unsettling tale an inquiry into childhood, mass violence, witness, and the price of memory.",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "id": "vox-029",
@@ -309,8 +324,9 @@
       "category": "Poetry",
       "format": "Publication",
       "url": "https://linkjar.to/almasexual/",
-      "description": "Poems from Delray, 2010–2026. A collected edition by Monet Marcel by Delray, published by MDNT MRKT PRESS · PERENNIAL.",
-      "id": "vox-041"
+      "description": "A collection of Delray poems written across 2010–2026, including sonnets that turn ordinary cloth, a sister's care, teaching, and household labor into records of lives official history neglects. Intimacy and social structure share the same line.",
+      "id": "vox-041",
+      "descriptionSource": "source-summary"
     },
     {
       "title": "DSMSSED CLWNS",
@@ -357,8 +373,9 @@
       "category": "Fiction",
       "format": "Publication",
       "url": "https://linkjar.to/clwnsbund/",
-      "description": "A related title in the CLWNS cycle.",
-      "id": "vox-047"
+      "description": "In Hollow Wood, DangR measures the histories lodged in common things while clerks and elaborate rules try to contain the aftermath of catastrophe. A bent spoon may be scrap or inheritance depending on who remembers it, and the teller must decide what counts as value.",
+      "id": "vox-047",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "VoyeurS — A Novella",
@@ -373,8 +390,9 @@
       "category": "Fiction",
       "format": "Publication",
       "url": "https://linkjar.to/marrowopsp3/",
-      "description": "A speculative work in the wider narrative catalog.",
-      "id": "vox-049"
+      "description": "Under refinery light in Delray, DangR waits for a coded signal and meets Mous3 for an operation aimed at the city's hidden marrow. Shifting voices, surveillance, and uncanny returns bring questions of identity and control into an industrial night.",
+      "id": "vox-049",
+      "descriptionSource": "manuscript-reviewed"
     },
     {
       "title": "Journal",
