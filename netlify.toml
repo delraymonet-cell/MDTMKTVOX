@@ -18,3 +18,19 @@
   from = "/api/newsletter"
   to = "/.netlify/functions/newsletter"
   status = 200
+
+[[redirects]]
+  from = "/api/analytics-event"
+  to = "/.netlify/functions/analytics-event"
+  status = 200
+
+[[redirects]]
+  from = "/api/analytics-report"
+  to = "/.netlify/functions/analytics-report"
+  status = 200
+
+[[headers]]
+  for = "/admin/analytics/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
