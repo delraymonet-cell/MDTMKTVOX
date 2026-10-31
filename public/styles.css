@@ -29,3 +29,24 @@
 .episode-link{display:inline-flex;align-items:center}
 @media(max-width:700px){.episode-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.episode{display:flex;gap:0;padding:0}.episode-art{height:auto;width:100%}.episode-body{padding:12px 12px 4px}.episode-title{font-size:16px}.episode-desc{font-size:11px}.episode-actions{grid-column:auto;padding:12px;flex-direction:column}.episode-play,.episode-link{width:100%;min-width:0}.episode-meta{font-size:8px}}
 @media(max-width:440px){.episode-list{grid-template-columns:1fr}.episode-desc{font-size:12px}.episode-actions{flex-direction:row}}
+
+
+/* MDNT MRKT PRESS editorial desk: independent-bookshop restraint */
+.publishing-desk{max-width:1440px;margin:0 auto;padding:76px 5% 82px}
+.publishing-desk__head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid #484841;padding:0 0 18px}
+.publishing-desk__intro{display:grid;grid-template-columns:1.25fr 0.75fr;gap:9%;padding:34px 0 45px;align-items:start}
+.publishing-desk__intro h2{font:700 clamp(31px,3.8vw,57px)/1.13 var(--font-serif);letter-spacing:-.055em;margin:0;max-width:850px}
+.publishing-desk__intro p{margin:0 0 26px;color:#c7c5bd;font:clamp(15px,1.2vw,18px)/1.7 Georgia,serif}
+.publishing-desk__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #595950;border-bottom:1px solid #595950}
+.publishing-desk__work{min-height:285px;display:flex;flex-direction:column;align-items:start;gap:17px;padding:26px 28px 25px;text-decoration:none;border-right:1px solid #44443c;transition:background .15s}
+.publishing-desk__work:first-child{padding-left:0}.publishing-desk__work:last-child{border-right:0}
+.publishing-desk__work:hover{background:#171813}
+.publishing-desk__index{font:10px var(--font-mono);letter-spacing:.12em;color:var(--river)}
+.publishing-desk__work strong{font:700 clamp(22px,2.1vw,31px)/1.22 var(--font-serif);letter-spacing:-.035em}
+.publishing-desk__work>span:not(.publishing-desk__index){font:14px/1.7 Georgia,serif;color:#bcbab3;flex:1}
+.publishing-desk__work em{font:10px var(--font-mono);font-style:normal;color:var(--signal);letter-spacing:.08em}
+.publishing-desk__note{font:10px/1.8 var(--font-mono);letter-spacing:.07em;color:#999991;display:flex;justify-content:space-between;gap:15px;margin:22px 0 0}
+.publishing-desk__note a{color:var(--signal);text-decoration:none}
+@media(max-width:1000px){.top-nav{gap:15px}.top-nav a{font-size:9px}}
+@media(max-width:750px){.publishing-desk{padding-top:52px;padding-bottom:65px}.publishing-desk__intro{display:block;padding:28px 0 34px}.publishing-desk__intro p{margin-top:21px}.publishing-desk__grid{grid-template-columns:1fr}.publishing-desk__work,.publishing-desk__work:first-child{min-height:auto;padding:24px 0;border-right:0;border-bottom:1px solid #41413c;gap:12px}.publishing-desk__work:last-child{border-bottom:0}.publishing-desk__note{display:block}.publishing-desk__note a{display:block;margin-top:6px}}
+@media(max-width:570px){.publishing-desk__head{flex-wrap:wrap}.site-header .top-nav{gap:12px;flex-wrap:wrap}.site-header .top-nav a{font-size:9px}}
