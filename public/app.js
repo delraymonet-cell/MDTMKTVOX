@@ -67,9 +67,11 @@
   }
   function imageOf(item) {
     for (const tag of ['itunes:image', 'media:thumbnail', 'media:content']) {
-      const image = item.getElementsByTagName(tag)[0];
-      const src = image && safeUrl(image.getAttribute('href') || image.getAttribute('url'));
-      if (src) return src;
+      for (const image of Array.from(item.getElementsByTagName(tag))) {
+        if (tag === 'media:content' && !/image/i.test(image.getAttribute('type') || image.getAttribute('medium') || '')) continue;
+        const src = safeUrl(image.getAttribute('href') || image.getAttribute('url'));
+        if (src) return src;
+      }
     }
     return showCover;
   }
@@ -130,9 +132,12 @@
   }
   function renderCard(ep,index) {
     const article=create('article','episode');
+    const cover=create('button','episode-art-trigger');cover.type='button';cover.setAttribute('aria-label',`Listen to ${ep.title}`);cover.addEventListener('click',()=>play(ep));
+    const placeholder=()=>{cover.replaceChildren();const fallback=create('div','episode-art episode-fallback','VOX');fallback.setAttribute('aria-hidden','true');cover.append(fallback);};
     if (ep.image) {
-      const img=create('img','episode-art');img.src=ep.image;img.alt=`Artwork for ${ep.title}`;img.loading='lazy';img.decoding='async';article.append(img);
-    } else { const fallback=create('div','episode-art episode-fallback','VOX');fallback.setAttribute('aria-hidden','true');article.append(fallback); }
+      const img=create('img','episode-art');img.src=ep.image;img.alt=`Cover artwork for ${ep.title}`;img.loading='lazy';img.decoding='async';img.addEventListener('error',placeholder,{once:true});cover.append(img);
+    } else placeholder();
+    article.append(cover);
     const body=create('div','episode-body');
     const meta=create('div','episode-meta');
     [ `TRANSMISSION ${String(index+1).padStart(2,'0')}`, ep.date, ep.duration ].filter(Boolean).forEach(s=>meta.append(create('span','',s)));
