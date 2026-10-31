@@ -14,22 +14,16 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="/styles.css" />
   <script defer src="/app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/brand.css">
 </head>
-<body>
+<body class="vox-page">
   <a class="skip-link" href="#episodes">Skip to episodes</a>
   <div class="site-shell">
-    <header class="site-header" id="top">
-      <a class="mini-brand" href="#top" aria-label="MDNT MRKT VOX home">MDNT MRKT <span>CONT.</span></a>
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a href="#episodes">VOX</a><a href="#press">PRESS</a><a href="/library/">READING ROOM</a><a href="/newsletter/">JOURNAL</a>
-        <a href="#about">ABOUT</a>
-        <a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer">SUBSTACK <span aria-hidden="true">↗</span></a>
-      <a href="/merch/">MERCH</a></nav>
-      <span class="meta-time">DETROIT // 00:00 <i class="plus-mark" aria-hidden="true">+</i></span>
-    </header>
+    <header class="site-header" id="top"><a class="mini-brand" href="/" aria-label="MDNT MRKT CONT. home">MDNT MRKT <span>CONT.</span></a><nav class="top-nav" aria-label="Primary navigation"><a href="/" aria-current="page">VOX</a><a href="/library/">READING ROOM</a><a href="/newsletter/">JOURNAL</a><a href="/merch/">MERCH</a></nav><span class="meta-time">DETROIT // 00:00</span></header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
@@ -44,9 +38,9 @@
           </div>
           <p class="hero-endline">STAY OPEN. STAY ACTIVE. <strong>THE SIGNAL IS ALIVE.</strong></p>
         </div>
-        <div class="hero-figure" aria-hidden="true">
+        <div class="hero-figure" aria-hidden="true"><div class="figure-label"><span>THE AFTER-HOURS DEPARTMENT</span><span>VOX / 001</span></div>
           <img src="/assets/skeletal-bird-moon.webp" alt="" width="661" height="390" />
-          <span class="vertical-signal">FIELD RECORDING // VOX 001</span>
+          <div class="figure-label"><span>THE SIGNAL IS ALIVE.</span><span>DETROIT / 00:00</span></div>
         </div>
       </section>
 
@@ -124,12 +118,12 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer"><span>© <span id="year">2026</span> MDNT MRKT CONT. / MDNT MRKT VOX</span><span>STAY OPEN. STAY ACTIVE. THE SIGNAL IS ALIVE.</span><a href="#top">BACK TO THE SURFACE ↑</a></footer>
+    <footer class="site-footer"><span>© <span id="year">2026</span> MDNT MRKT CONT. / DETROIT</span><nav class="footer-links" aria-label="House links"><a href="/#press">PRESS</a><a href="/#about">ABOUT</a><a href="https://mdntmrktcont.substack.com/" target="_blank" rel="noopener noreferrer">SUBSTACK ↗</a></nav><a href="#top">BACK TO THE SURFACE ↑</a></footer>
   </div>
   <div class="player-bar" id="player-bar" hidden>
     <div class="player-info"><small>NOW PLAYING // MDNT MRKT VOX</small><strong id="player-title">Transmission</strong></div>
     <audio id="audio-player" controls preload="none" aria-label="Podcast audio playback"></audio>
     <button id="close-player" type="button" class="player-close" aria-label="Close player">×</button>
   </div>
-<p style="font-size:11px;color:#aaa;margin:15px auto;max-width:900px">Privacy: we collect anonymous site navigation and publication-link interactions for readership statistics; approximate region may be recorded, never raw IP. Respecting DNT/GPC. <button type="button" onclick="localStorage.setItem('mdnt_analytics_optout','1');this.textContent='Analytics disabled for this browser';" style="border:1px solid #666;background:transparent;color:#d8ef57;padding:5px;cursor:pointer">Opt out of analytics</button></p><script defer src="/analytics.js"></script></body>
+<p class="privacy-note">Privacy: we collect anonymous site navigation and publication-link interactions for readership statistics; approximate region may be recorded, never raw IP. Respecting DNT/GPC. <button type="button" onclick="localStorage.setItem('mdnt_analytics_optout','1');this.textContent='Analytics disabled for this browser';" >Opt out of analytics</button></p><script defer src="/analytics.js"></script></body>
 </html>

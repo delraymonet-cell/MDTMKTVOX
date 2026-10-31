@@ -5,7 +5,9 @@
 ## Identity
 
 - Uses the user's supplied MDNT MRKT VOX style-guide artwork as a cropped, optimized website asset (no replacement of the supplied brand illustration).
-- Obsidian `#0A0A0A`, Bone `#F5F5F0`, Signal `#D8EF57`, Oxide `#E48667`, River `#A9D0C5`.
+- Shared identity across VOX, the reading room, journal and merchandise: Obsidian `#0A0A0A`, Bone `#F5F5F0`, Static `#4A4A4A` and Ghost `#FFFFFF`.
+- Space Grotesk headlines, Inter body copy and JetBrains Mono labels. `public/brand.css` is loaded after page styles to apply the approved CONT. merchandise direction consistently.
+- Supplied bird artwork, publication catalog, audio controls and feed data are preserved; page navigation and footer are shared across the four public rooms.
 - Responsive desktop/mobile styling, live podcast episode index, newest-episode feature, episode search, HTML audio player, Substack links, and RSS source link.
 
 ## Merchandise preview
