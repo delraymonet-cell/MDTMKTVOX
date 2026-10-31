@@ -50,3 +50,33 @@
 @media(max-width:1000px){.top-nav{gap:15px}.top-nav a{font-size:9px}}
 @media(max-width:750px){.publishing-desk{padding-top:52px;padding-bottom:65px}.publishing-desk__intro{display:block;padding:28px 0 34px}.publishing-desk__intro p{margin-top:21px}.publishing-desk__grid{grid-template-columns:1fr}.publishing-desk__work,.publishing-desk__work:first-child{min-height:auto;padding:24px 0;border-right:0;border-bottom:1px solid #41413c;gap:12px}.publishing-desk__work:last-child{border-bottom:0}.publishing-desk__note{display:block}.publishing-desk__note a{display:block;margin-top:6px}}
 @media(max-width:570px){.publishing-desk__head{flex-wrap:wrap}.site-header .top-nav{gap:12px;flex-wrap:wrap}.site-header .top-nav a{font-size:9px}}
+
+
+/* MDNT MRKT PROVIDERS brand-book alignment: parent identity is monochrome.
+   Skeletal-bird, moon, archive and water motifs are already in homepage assets. */
+:root{--night:#0A0A0A;--paper:#F5F5F0;--static:#4A4A4A;--ghost:#FFFFFF;--signal:#F5F5F0;--rust:#A6A6A0;--river:#D1D1CA;--dim:#9C9C96}
+.site-header{border-bottom-color:var(--static)}
+.mini-brand span{color:var(--paper)}
+.hero h1{letter-spacing:-.083em}
+.hero h1 strong{color:var(--paper)}
+.hero h1 .hero-accent{color:#A6A6A0}
+.hero .micro-kicker,.section-tag,.small-label,.tiny-signal{color:var(--paper)}
+.live-dot{background:var(--paper);box-shadow:0 0 0 1px #7b7b72}
+.hero-description{color:#CFCFCA}
+.button-lime{background:var(--paper);border-color:var(--paper);color:var(--night)}
+.button-line{border-color:var(--static)}
+.feature-panel,.transmission-note{border-color:var(--static)}
+.signal-punct{color:#B8B8AF}
+.publishing-desk__index{color:#C9C9C2}
+.publishing-desk__work:hover{background:#151515}
+.publishing-desk__work em,.publishing-desk__note a{color:var(--paper)}
+.publishing-desk__head,.publishing-desk__grid{border-color:var(--static)}
+.episode-play{background:var(--paper);color:var(--night)}
+.episode:hover{border-color:var(--paper)}
+.episode-fallback{background:#181818;color:var(--paper)}
+.frequency-bars{background:repeating-linear-gradient(90deg,transparent 0 5px,var(--static) 5px 7px,transparent 7px 13px)}
+.orbit-core{background:var(--paper)}
+.orbit-small{border-color:var(--paper)}
+.player-bar{border-top-color:var(--paper)}
+.player-info small{color:var(--paper)}
+@media(max-width:700px){.publishing-desk__head{gap:12px}.hero h1{font-size:clamp(46px,11.5vw,80px)}}
