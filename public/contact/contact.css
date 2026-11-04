@@ -1,0 +1,88 @@
+.contact-page .site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-page :is(.site-header, .site-footer) {
+  width: 100%;
+  margin-block: 0;
+}
+
+.contact-main {
+  flex: 1;
+  width: min(100%, 1100px);
+  margin-inline: auto;
+  padding: clamp(42px, 7vw, 92px) 5% clamp(48px, 8vw, 100px);
+}
+
+.contact-main .micro-kicker {
+  margin: 0 0 16px;
+}
+
+.contact-main h1 {
+  margin: 0;
+  font-size: clamp(46px, 7vw, 82px);
+  line-height: 1;
+  letter-spacing: -.06em;
+}
+
+.contact-intro {
+  max-width: 38em;
+  margin: 18px 0 34px;
+  color: var(--dim);
+  line-height: 1.65;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(26px, 6vw, 72px);
+  padding-top: 28px;
+  border-top: 1px solid var(--static);
+}
+
+.contact-grid h2 {
+  margin: 0 0 15px;
+  font-size: 24px;
+}
+
+.contact-grid p {
+  margin: 0 0 15px;
+  color: var(--dim);
+}
+
+.contact-email {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 13px;
+  border: 1px solid var(--static);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-links a:hover {
+  background: #181818;
+  border-color: var(--dim);
+}
+
+@media (max-width: 650px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
