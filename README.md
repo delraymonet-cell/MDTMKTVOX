@@ -29,7 +29,7 @@ No API keys, API subscriptions, credentials, build tools, JavaScript dependencie
 1. Download and unzip this project.
 2. Make a free GitHub repository, e.g. `mdnt-mrkt-vox`. Upload **everything inside** the unzipped folder, including `netlify.toml`, `public`, and `netlify/functions`.
 3. Visit https://app.netlify.com/ → Add new project → Import an existing project → select GitHub → select the repository.
-4. Netlify will read `netlify.toml`. If asked, use **Publish directory** `public`, **Functions directory** `netlify/functions`, and **no build command**.
+4. Netlify will read `netlify.toml`. If asked, use **Publish directory** `public`, **Functions directory** `netlify/functions`, and build command `node scripts/build-linkjar-rss.mjs`.
 5. Click **Deploy**. Netlify supplies a public `*.netlify.app` address. Open it and confirm episode listings and audio playback.
 6. Optionally rename the Netlify site to something like `mdnt-mrkt-vox` if that name is available, or attach a domain you control under Netlify's Domain management.
 7. Keep publishing episodes on Substack. The live website will automatically reflect public updates as its RSS is fetched. No site rebuild needed for episodes.
@@ -46,6 +46,12 @@ No API keys, API subscriptions, credentials, build tools, JavaScript dependencie
 ## Optional desktop preview
 
 Opening `public/index.html` from disk may show the layout, but CSS and JS use root-relative URLs, so for reliable testing serve `public` on localhost. Even then, without the serverless function the RSS list remains offline by design. The fully working version requires Netlify Functions.
+
+## Linkjar publication RSS
+
+Subscribe at https://mdntmrktvox.netlify.app/library/linkjar.xml. The Reading Room links to the same feed.
+
+Netlify generates the feed from `public/library/catalog.json` during each deploy. Run `node scripts/build-linkjar-rss.mjs` to generate it locally. It includes the catalog's Linkjar links and excludes Draft entries and PDFLink links. To add a release, add its intended public Linkjar URL to the Reading Room catalog and deploy the site. Set `publishedAt` to the confirmed publication date in `YYYY-MM-DD` format when available. Undated entries omit the RSS publication date.
 
 ## Security and rights
 
